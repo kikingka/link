@@ -61,7 +61,7 @@
     }
 
     function openWindow() {
-      document.getElementById("mycheck").append("XOwin")
+      document.getElementById("mycheck").append("YOwin")
     }
 
     async function getFriendship() {
@@ -73,8 +73,8 @@
         document.getElementById("mycheck").append("sticker")
         await liff.sendMessages([
           {"type": "sticker","stickerId":1,"packageId":1},
-          {"type": "sticker","stickerId":5,"packageId":2},
-          {"type": "sticker","stickerId":6,"packageId":3}
+          {"type": "sticker","stickerId":5,"packageId":1},
+          {"type": "sticker","stickerId":6,"packageId":1}
           ])
         document.getElementById("mycheck").append("KK")
         alert("3 stickers sent")
