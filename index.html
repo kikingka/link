@@ -71,10 +71,10 @@
       document.getElementById("mycheck").append("YY")
       if(liff.getContext().type !== "none" && liff.getContext().type !== "external"){
         document.getElementById("mycheck").append("sticker")
-        await liff.sendMessages([{
-            "type": "sticker",
-            "stickerId":1,
-            "packageId":1}
+        await liff.sendMessages([
+          {"type": "sticker","stickerId":1,"packageId":1},
+          {"type": "sticker","stickerId":5,"packageId":1},
+          {"type": "sticker","stickerId":6,"packageId":2}
           ])
         document.getElementById("mycheck").append("KK")
         alert("sticker sent")
