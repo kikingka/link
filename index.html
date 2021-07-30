@@ -67,12 +67,14 @@
     }
 
     async function sendMsg() {
+      document.getElementById("mycheck").append("YY")
       if(liff.getContext().type !== "none" && liff.getContext().type !== "external"){
         await liff.sendMessage([{
             "type": "sticker",
             "stickerId":1,
             "packageId":1}
           ])
+        document.getElementById("mycheck").append("KK")
         alert("sticker sent")
       }
     }
