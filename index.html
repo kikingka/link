@@ -75,18 +75,18 @@
     }
 
     function getEnvironment() {
-      document.getEnvironmentById("os").append(liff.getOS())
-      document.getEnvironmentById("langauage").append(liff.getLangauage())
-      document.getEnvironmentById("version").append(liff.getVersion())
-      document.getEnvironmentById("accessToken").append(liff.getAccessToken())
-      document.getEnvironmentById("isInClient").append(liff.isInClient())
+      document.getElementById("os").append(liff.getOS())
+      document.getElementById("langauage").append(liff.getLangauage())
+      document.getElementById("version").append(liff.getVersion())
+      document.getElementById("accessToken").append(liff.getAccessToken())
+      document.getElementById("isInClient").append(liff.isInClient())
 
       if(liff.isInClient()){
-      document.getEnvironmentById("btnLogOut").style.display="none"
+      document.getElementById("btnLogOut").style.display="none"
     }else{
-      document.getEnvironmentById("btnMsg").style.display="none"
-      document.getEnvironmentById("btnScanCode").style.display="none"
-      document.getEnvironmentById("btnClose").style.display="none"
+      document.getElementById("btnMsg").style.display="none"
+      document.getElementById("btnScanCode").style.display="none"
+      document.getElementById("btnClose").style.display="none"
     }
 
 
