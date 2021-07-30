@@ -70,6 +70,7 @@
     async function sendMsg() {
       document.getElementById("mycheck").append("YY")
       if(liff.getContext().type !== "none" && liff.getContext().type !== "external"){
+        document.getElementById("mycheck").append("sticker")
         await liff.sendMessage([{
             "type": "sticker",
             "stickerId":1,
@@ -81,14 +82,13 @@
     }
 
     function getContext() {
-      document.getElementById("mycheck").append("aa")
       document.getElementById("type").append(liff.getContext().type)
       document.getElementById("viewType").append(liff.getContext().viewType)
       document.getElementById("utouId").append(liff.getContext().utouId) 
       document.getElementById("roomId").append(liff.getContext().roomId) 
       document.getElementById("groupId").append(liff.getContext().groupId) 
 
-      document.getElementById("mycheck").append("XX")
+      document.getElementById("mycheck").append("Con")
     }
 
     async function getUserProfile() {
@@ -98,7 +98,7 @@
       document.getElementById("statusMessage").append(profile.statusMessage)
       document.getElementById("displayName").append(profile.displayName)
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
-
+      document.getElementById("mycheck").append("Us")
     }
 
     function getEnvironment() {
