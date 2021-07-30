@@ -28,6 +28,7 @@
   <p id="universalLink1"><b>Universal Link:</b> </p>
   <p id="universalLink2"><b>Universal Link with Query params:</b> </p>
   <p><a href="liff/path/?param=9">Link to Path</a></p>
+  <p id="mycheck"><b>check:</b> </p>
 
   <button id="btnMsg" onclick="sendMsg()">Send Message</button>
   <button id="btnShare" onclick="shareMsg()">Share Target Picker</button>
@@ -69,11 +70,14 @@
     }
 
     function getContext() {
+      document.getElementById("mycheck").append("aa")
       document.getElementById("type").append(liff.getContext().type)
       document.getElementById("viewType").append(liff.getContext().viewType)
       document.getElementById("utouId").append(liff.getContext().utouId) 
       document.getElementById("roomId").append(liff.getContext().roomId) 
       document.getElementById("groupId").append(liff.getContext().groupId) 
+
+      document.getElementById("mycheck").append("XX")
     }
 
     async function getUserProfile() {
