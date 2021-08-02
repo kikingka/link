@@ -53,7 +53,7 @@
     async function shareMsg() {
       const profile = await liff.getProfile()
       await liff.shareTargetPicker([{
-        "type" : "text","text" : "shareTargetPicker by" & profile.displayName
+        "type" : "text","text" : "shareTargetPicker by" + profile.displayName
       }
       ])
 
@@ -134,7 +134,7 @@
     }
 
      function checked(){
-        document.getElementById("mycheck").append("YYY")
+        document.getElementById("mycheck").append("ZZZ")
      }
 
 
