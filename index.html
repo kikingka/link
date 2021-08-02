@@ -46,16 +46,18 @@
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     function createUniversalLink() {
+
     }
 
     async function shareMsg() {
+      document.getElementById("mycheck").append("kOwin")
     }
 
     function logOut() {
     }
 
     function closed() {
-      document.getElementById("mycheck").append("cOwin")
+      
     }
 
     async function scanCode() {
@@ -63,7 +65,7 @@
 
     function openWindow() {
       liff.openWindow({
-        url:"https:line.me",
+        url:"https://line.me",
         external: false
       })
     }
