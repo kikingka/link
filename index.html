@@ -47,11 +47,11 @@
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     function createUniversalLink() {
-      const Link1 = liff.permanentLink.creatUrl()
+      const Link1 = liff.permanentLink.createUrl()
        document.getElementById("universalLink1").append(Link1)
        liff.permanentLink.setExtraQueryParam("param=9&ids=2")
 
-      const Link2 = liff.permanentLink.creatUrl()
+      const Link2 = liff.permanentLink.createUrl()
        document.getElementById("universalLink2").append(Link2)
 
     }
@@ -140,7 +140,7 @@
     }
 
      function checked(){
-        document.getElementById("mycheck").append("AAA")
+        document.getElementById("mycheck").append("BBB")
      }
 
 
