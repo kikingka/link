@@ -55,13 +55,17 @@
     }
 
     function closed() {
+      document.getElementById("mycheck").append("YOwin")
     }
 
     async function scanCode() {
     }
 
     function openWindow() {
-      document.getElementById("mycheck").append("YOwin")
+      liff.openWindow({
+        url:"https:line/me",
+        external: true
+      })
     }
 
     async function getFriendship() {
