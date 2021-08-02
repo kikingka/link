@@ -50,7 +50,7 @@
     }
 
     async function shareMsg() {
-      document.getElementById("mycheck").append("kOwin")
+      document.getElementById("mycheck").append("BOwin")
     }
 
     function logOut() {
@@ -61,6 +61,8 @@
     }
 
     async function scanCode() {
+      const result = await liff.scanCode()
+      document.getElementById("scanCode").append(result.value)
     }
 
     function openWindow() {
