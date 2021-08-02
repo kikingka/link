@@ -49,6 +49,7 @@
     function createUniversalLink() {
       const Link1 = liff.permanentLink.createUrl()
        document.getElementById("universalLink1").append(Link1)
+       liff.append("/path/")
        liff.permanentLink.setExtraQueryParam("param=9&ids=2")
 
       const Link2 = liff.permanentLink.createUrl()
@@ -140,7 +141,7 @@
     }
 
      function checked(){
-        document.getElementById("mycheck").append("BBB")
+        document.getElementById("mycheck").append("CCC")
      }
 
 
