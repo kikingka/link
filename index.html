@@ -50,14 +50,14 @@
     }
 
     async function shareMsg() {
-      document.getElementById("mycheck").append("BOwin")
+      document.getElementById("mycheck").append("XXOwin")
     }
 
     function logOut() {
     }
 
     function closed() {
-      
+      liff.closeWindow()
     }
 
     async function scanCode() {
@@ -128,11 +128,14 @@
     async function main() {
 
       await liff.init({ liffId: "1656269773-M7yRBvy9" })
-      getEnvironment()
-      getUserProfile()
-      getContext()
-      // getFriendship()
-      // createUniversalLink()
+      document.getElementById("isLoggedIn").append(liff.isLoggedIn()
+      if(liff.isLoggedIn()){
+        getEnvironment()
+        getUserProfile()
+        getContext()
+        // getFriendship()
+        // createUniversalLink()
+      }
     }
     main()
   </script>
