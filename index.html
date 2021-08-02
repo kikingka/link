@@ -50,10 +50,12 @@
     }
 
     async function shareMsg() {
-      document.getElementById("mycheck").append("XXOwin")
+      document.getElementById("mycheck").append("KIOwin")
     }
 
     function logOut() {
+      liff.logout()
+      window.location.reload()
     }
 
     function closed() {
@@ -135,7 +137,13 @@
         getContext()
         // getFriendship()
         // createUniversalLink()
+      } else{
+        liff.login()
+
       }
+
+
+
     }
     main()
   </script>
